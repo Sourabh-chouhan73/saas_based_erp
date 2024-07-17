@@ -9,6 +9,16 @@
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
 
+  --o-color-3:rgb(0 206 175);
+
+  
+  --o-color-2:rgb(252 120 125);
+  
+  
+  --o-color-1:rgb(27 182 249);
+  
+  
+
   --primary-glow: conic-gradient(
     from 180deg at 50% 50%,
     #16abff33 0deg,
@@ -78,21 +88,25 @@
   padding: 0;
   margin: 0;
 }
+.o-6-red{
+  color: red;
+}
 
 html,
 body {
   max-width: 100vw;
   overflow-x: hidden;
+  /* background-color: #F3F3F3 !important; */
 }
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
+  /* background: linear-gradient(
       to bottom,
       transparent,
       rgb(var(--background-end-rgb))
     )
-    rgb(var(--background-start-rgb));
+    rgb(var(--background-start-rgb)); */
 }
 
 a {
@@ -100,8 +114,215 @@ a {
   text-decoration: none;
 }
 
-@media (prefers-color-scheme: dark) {
+
+
+
+/* @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
   }
+} */
+
+/* login form css */
+
+.login-card{
+  border-radius: 20px !important;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+  border: 0px !important;
+}
+.login-forgot p{
+  text-align: end !important;
+  font-size: 14px;
+  
+}
+.login-forgot p a{
+  color: black;  
+}
+
+.register-card {
+  border-radius: 20px !important;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+  border: 0px !important;
+}
+/* navbar -css */
+/* .navbar-con{
+  display: flex;
+  justify-content: flex-end; 
+} */
+.navbar-collapse{
+  flex-grow: 0 !important;
+}
+/* home page css */
+.home-item-con{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.home-item-con a .card {
+ border: 1px solid;
+ height: 280px;
+ width: 300px;
+ box-shadow: 0 3px 6px rgba(0, 0, 0, .16), 0 3px 6px rgba(0, 0, 0, .23);
+}
+.home-item-con a{
+  text-decoration: none;
+}
+.home-item{
+   border: 1px solid ;
+}
+.home-top-section{
+  height: auto;
+  background-color:rgba(0, 0, 0, 0.5);
+}
+.home-bottom-sec .container .row .col h2{
+    color: white !important;
+}
+.home-bottom-sec .container .row{
+  color: white !important;
+  
+}
+.home-top-row{
+  padding:60px 0px;
+}
+.home-top-row .col h2{
+  color: white;
+  text-align: center;
+}
+.home-top-row .col p{
+  color: white;
+  text-align: center;
+}
+
+.home-top2-row{
+  padding:35px 0px;
+}
+.home-top2-row .col h2{
+  text-align: center;
+}
+.home-top2-row .col p{
+  text-align: center;
+}
+.home-bottom-row{
+  padding:60px 0px;
+}
+.home-bottom-row .col h2{
+  text-align: center;
+}
+.home-bottom-row .col p{
+  text-align: center;
+}
+/* header css */
+.header-sec{
+  min-height: 12vh;
+  background-color: #70705d;
+  color: white;
+}
+.header-con{
+  padding: 40px 15px !important;
+}
+.header-con h2{
+  font-size: 60px;
+  line-height: 72px;
+  font-weight: 600;
+  margin-bottom: 0.35em;
+}
+.header-con h6{
+  font-size: 20px;
+  line-height: 32px;
+  font-weight: 500;
+  margin-bottom: 0px;
+}
+/* pricing */
+.dreaming-border{
+  background-image: url('https://odoocdn.com/openerp_website/static/src/img/highlights/red_highlight_03.svg');
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  white-space: nowrap;
+  padding-bottom: 5px;
+}
+
+.price-card-footer{
+  border-top: 0px !important;
+
+}
+.price-card-footer .btn-primary{
+  background-color: #604058 !important; 
+  border: 0px ;
+}
+.price-card-footer .btn-secondary{
+  background-color:#E6E9ED !important; 
+  border: 0px ;
+  font-size: 18px;
+  font-weight: 600;
+  color:#604058 !important;
+}
+.price-card-body-1 .pricing-1 span{
+  font-size: 2rem;
+  color: var(--o-color-1);
+}
+.price-card-body-2 .pricing-2 span{
+  font-size: 2rem;
+  color: var(--o-color-2);
+}
+.price-card-body-3 .pricing-3 span{
+  font-size: 2rem;
+  color: var(--o-color-3);
+}
+.price-card-body-1 .pricing-1 b{
+  font-size: 3rem;
+  color: var(--o-color-1);
+}
+.price-card-body-2 .pricing-2 b{
+  font-size: 3rem;
+  color: var(--o-color-2);
+}
+.price-card-body-3 .pricing-3 b{
+  font-size: 3rem;
+  color:var(--o-color-3);
+}
+.price-top-card-b-1{
+background-color: var(--o-color-1);
+}
+.price-top-card-b-2{
+  background-color: var(--o-color-2);
+  }
+  .price-top-card-b-3{
+    background-color: var(--o-color-3);
+    }
+.price-card{
+  border: 0px !important;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+
+}
+.price-card-body-2 ul,.price-card-body-1 ul ,.price-card-body-3 ul{
+  list-style: none;
+  padding-left: 4px !important;
+}
+.stud-cust-plan{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 34px;
+}
+.stud-cust-plan-icon-con{
+  /* border: 1px solid; */
+  padding: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 50px;
+}
+.add-many-more-con{
+
+}
+.add-many-more-text{
+  margin: 25px 0px 20px;
+  font-size: 24px;
+}
+.add-many-more-text a{
+  text-decoration: none;
+   margin-right: 10px;
+   color: #017E84;
+   font-weight: 600;
 }

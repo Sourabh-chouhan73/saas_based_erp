@@ -1,95 +1,124 @@
 import Image from "next/image";
-import styles from "./page.module.css";
+import Link from "next/link";
+// import styles from "./page.module.css";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faEnvelope, faLock, faEye, faEyeSlash } from '@fortawesome/free-solid-svg-icons';
+
+
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.js</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <>
+      <section className="home-top-section">
+        <div className="container">
+          <div className="row home-top-row">
+            <div className="col">
+              <h2>Manage Customers, Projects, And Create Invoices in the cloud</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium reiciendis distinctio consequuntur, illo quos quam.</p>
+            </div>
+          </div>
+          </div>
+      </section>
+      <section className="home-top2-section">
+        <div className="container">
+          <div className="row home-top2-row">
+            <div className="col">
+              <h2>FEATURES AND BENEFITS</h2>
+              <p>Explore the awesome Features that will help you to get your business to next level.</p>
+            </div>
+          </div>
+          </div>
+      </section>
+     <section className="home-main-sec bg-white">
+      <div className="container my-4">
+        <div className="home-item-con">
+          <Link href={''}>
+            <div className="card home-item">
+              <div className="card-body">
+                  <div className="text-center m-2">
+                  <FontAwesomeIcon icon={faEnvelope} height={45} width={45} />
+                  </div>
+                  <h5 className="text-center">Create good looking proposals</h5>
+                  <p className="text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti, eveniet! Quae, maiores?</p>
+              </div>
+            </div>
+          </Link>
+          <Link href={''}>
+            <div className="card  home-item">
+              <div className="card-body">
+                  <div className="text-center m-2">
+                  <FontAwesomeIcon icon={faEnvelope} height={45} width={45} />
+                  </div>
+                  <h5 className="text-center">Create good looking proposals</h5>
+                  <p className="text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti, eveniet! Quae, maiores?</p>
+              </div>
+            </div>
+          </Link>
+          <Link href={''}>
+            <div className="card  home-item">
+              <div className="card-body">
+                  <div className="text-center m-2">
+                  <FontAwesomeIcon icon={faEnvelope} height={45} width={45} />
+                  </div>
+                  <h5 className="text-center">Create good looking proposals</h5>
+                  <p className="text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti, eveniet! Quae, maiores?</p>
+              </div>
+            </div>
+          </Link>
+          <Link href={''}>
+            <div className="card  home-item">
+              <div className="card-body">
+                  <div className="text-center m-2">
+                  <FontAwesomeIcon icon={faEnvelope} height={45} width={45} />
+                  </div>
+                  <h5 className="text-center">Create good looking proposals</h5>
+                  <p className="text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti, eveniet! Quae, maiores?</p>
+              </div>
+            </div>
+          </Link>
+          <Link href={''}>
+            <div className="card  home-item">
+              <div className="card-body">
+                  <div className="text-center m-2">
+                  <FontAwesomeIcon icon={faEnvelope} height={45} width={45} />
+                  </div>
+                  <h5 className="text-center">Create good looking proposals</h5>
+                  <p className="text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti, eveniet! Quae, maiores?</p>
+              </div>
+            </div>
+          </Link>
+          <Link href={''}>
+            <div className="card home-item">
+              <div className="card-body">
+                  <div className="text-center m-2">
+                  <FontAwesomeIcon icon={faEnvelope} height={45} width={45} />
+                  </div>
+                  <h5 className="text-center">Create good looking proposals</h5>
+                  <p className="text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti, eveniet! Quae, maiores?</p>
+              </div>
+            </div>
+          </Link>
+          
+
+        
+
         </div>
       </div>
+     </section>
+     <section className="home-bottom-section">
+        <div className="container">
+          <div className="row home-top2-row">
+            <div className="col">
+              <h2>TEST YOURSELF!</h2>
+              <p>Try the demo to see how CRM can help to succeed.</p>
+              <div className="d-flex justify-content-center align-item-center">
+                  <button className="btn btn-primary w-25">TRY DEMO</button>
+              </div>
+            </div>
+          </div>
+          </div>
+      </section>
 
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore starter templates for Next.js.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+    </>
   );
 }
